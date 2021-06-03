@@ -1,0 +1,7 @@
+body {
+  /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...);  */
+  height: 300vh;
+}
+.heading {
+  text-align: center;
+}
