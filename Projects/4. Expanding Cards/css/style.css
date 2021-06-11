@@ -36,7 +36,7 @@ body {
   border-radius: 25px;
   color: #fff;
   cursor: pointer;
-  flex: 0.2;
+  flex: 0.1;
   margin: 2px;
   position: relative; /* for H3  */
   transition: flex 0.7s ease-in;
