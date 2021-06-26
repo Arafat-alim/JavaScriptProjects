@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Tips Calculator</h1></header>
+      <p>How much was your bill?<span class="imp">*</span></p>
+      <label for="amt">$</label>
+      <input type="number" name="amount" id="billamt" required />
+      <p>How was your service?</p>
+      <select name="serviceQual" id="serviceQual" required>
+        <option value="#" active>---Choose an Option---</option>
+        <option value="0.3">30% - Outstanding</option>
+        <option value="0.25">25% - Great</option>
+        <option value="0.20">20% - Good</option>
+        <option value="0.15">15% - It was OK!</option>
+        <option value="0.10">10% - Bad</option>
+        <option value="0.05">0% -Terrible</option>
+      </select>
+      <p>How many people are sharing the bill?</p>
+      <input type="text" id="peopleamt" />
+      <label for="peopleamt">people</label>
+
+      <label for="calculate"></label>
+      <button class="calculate" id="calculate">Calculate</button>
+
+      <div class="msg" id="msg" hidden>
+        <h3 class="tip">Tip Amount</h3>
+        <p class="ans">&#x24; <span id="ans"></span> <span id="each"></span></p>
+      </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
