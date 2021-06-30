@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background: rgb(226, 75, 49);
+  background: linear-gradient(
+    41deg,
+    rgba(226, 75, 49, 1) 0%,
+    rgba(253, 141, 29, 0.9387955011106005) 50%,
+    rgba(237, 57, 158, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+  height: 120vh;
+}
+
+h1 {
+  border: 50px 0 30px;
+  text-align: center;
+}
+p {
+  font-weight: 500;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  margin: 0;
+  padding: 25px;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.faq {
+  background: rgb(226, 75, 49);
+  background: linear-gradient(
+    41deg,
+    rgba(226, 75, 49, 1) 0%,
+    rgba(196, 52, 4, 0.9387955011106005) 50%,
+    rgba(237, 57, 158, 1) 100%
+  );
+
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in;
+  color: #fff;
+}
+.faq.active {
+  background: rgb(226, 75, 49);
+  background: linear-gradient(
+    41deg,
+    rgba(226, 75, 49, 1) 0%,
+    rgba(253, 85, 29, 0.9387955011106005) 50%,
+    rgba(237, 57, 158, 1) 100%
+  );
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  color: #fff;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+.faq-title {
+  margin: 0 35px 0 0;
+}
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.faq-toggle:focus {
+  outline: 0;
+}
+.faq-toggle .fa-times {
+  display: none;
+}
+.faq.active .faq-toggle .fa-times {
+  display: block;
+  color: #fff;
+}
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+.faq.active .faq-toggle {
+  background-color: black;
+}
