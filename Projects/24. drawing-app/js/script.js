@@ -108,5 +108,5 @@ colorEl.addEventListener("change", (e) => {
 
 //adding an eraser
 eraser.addEventListener("click", () => {
-  alert("This feature is locked");
+  alert("This feature is locked 🔒");
 });
